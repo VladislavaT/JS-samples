@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <title>AJAX</title>
+      <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+      <style>
+        .container {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          flex-wrap: wrap;
+        }
+        .widthDiv{
+          width: 400px;
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+          transition: 0.3s;
+          text-align: center;
+          margin-bottom: 20px;
+        }
+        .widthDiv:hover {
+           box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+        .margin{
+          margin: 0 0  10px 10px;
+        }
+        #spinner{
+        visibility: hidden;
+        width: 80px;
+        height: 80px;
+
+        border: 2px solid #f3f3f3;
+        border-top:3px solid #f25a41;
+        border-radius: 100%;
+
+        position: absolute;
+        top:0;
+        bottom:0;
+        left:0;
+        right: 0;
+        margin: auto;
+
+        animation: spin 1s infinite linear;
+      }
+
+      @keyframes spin {
+        from {
+            transform: rotate(0deg);
+        } to {
+            transform: rotate(360deg);
+        }
+      }
+
+      #spinner.show {
+        visibility: visible;
+      }
+      </style>
+  </head>
+
+
+  <body>
+    <div class="container">
+
+    </div>
+
+    <div id="spinner"></div> 
+    <script src="js/index.js"></script>
+  </body>
+</html>
