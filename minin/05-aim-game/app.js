@@ -85,4 +85,18 @@ function createRandCircle() {
 function getRandomColor() {
     return colors[Math.floor(Math.random() * colors.length)]
 }
+/*------------u wanna play? let`s play--------------*/
+/*
+function winGame() {
+    function kill() {
+        const circle = document.querySelector('.circle')
+        if(circle) { 
+            circle.click()
+        }
+        
+    
+    }
+    setInterval(kill, 75)
+}
 
+winGame()*/
